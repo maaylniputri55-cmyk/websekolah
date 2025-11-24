@@ -8,7 +8,70 @@
     <link rel="stylesheet" href="style.css">
 </head>
     <style>
-        
+        body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f5f6fa;
+}
+
+/* --- SECTION --- */
+.student-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+
+/* --- GRID --- */
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+/* --- CARD --- */
+.student-card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.student-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.student-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.student-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* --- HOVER EFFECT --- */
+.student-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
     </style>
 <body>
 
@@ -21,22 +84,22 @@
             <!-- Student 1 -->
             <div class="student-card">
                 <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Alya">
-                <h3>Alya Rahma</h3>
-                <p>UI/UX Designer</p>
+                <h3>maylani putri</h3>
+                <p>studentpage</p>
             </div>
 
             <!-- Student 2 -->
             <div class="student-card">
                 <img src="https://images.unsplash.com/photo-1531123414780-f53b6a6e0b4b?auto=format&fit=crop&w=600&q=80" alt="Bayu">
-                <h3>Bayu Santoso</h3>
+                <h3>suci nurogibah</h3>
                 <p>Backend Developer</p>
             </div>
 
             <!-- Student 3 -->
             <div class="student-card">
                 <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Citra">
-                <h3>Citra Lestari</h3>
-                <p>Data Analyst</p>
+                <h3>cinta amelia putri</h3>
+                <p>homepage</p>
             </div>
 
             <!-- Student 4 -->
