@@ -1,100 +1,63 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CLAS Gallery</title>
-  <style>
- 
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background:linear-gradient(180deg,#0068A5);
-      color:#e6eef8;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding:28px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLAS GALLERY SMK MUTU</title>
 
-    header{
-      display:flex;
-      gap:16px;
-      align-items:center;
-      margin-bottom:18px;
-      flex-wrap:wrap;
-    }
-    .brand{
-      display:flex;
-      gap:12px;
-      align-items:center;
-    }
-    .logo{
-      width:48px;height:48px;border-radius:8px;
-      background:linear-gradient(135deg,#7c3aed,#4f46e5);
-      display:inline-grid;place-items:center;font-weight:700;
-      box-shadow:0 6px 18px rgba(0,0,0,0.5);
-    }
-    h1{font-size:18px;margin:0}
-    p.tagline{margin:0;color:#94a3b8;font-size:13px}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0068A5;
+            margin: 0;
+            padding: 20px;
+            color: white;
+        }
 
-    .controls{
-      margin-left:auto;
-      display:flex;
-      gap:8px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-    .btn{
-      background:rgba(255,255,255,0.03);
-      color:inherit;
-      border:1px solid rgba(255,255,255,0.04);
-      padding:8px 12px;border-radius:10px;
-      cursor:pointer;font-size:13px;
-    }
-    .btn.active{
-      background:linear-gradient(90deg,#7c3aed,#4f46e5);
-      color:white;
-      border:none;
-    }
-    input[type="search"]{
-      padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);
-      background:transparent;color:inherit;font-size:13px;min-width:200px;
-    }
-</style>
+        h1 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.15);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .title {
+            margin-top: 8px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="brand">
-      <div class="logo">CL</div>
-      <div>
-        <h1>CLAS GALLERY</h1>
-        <p class="tagline">Tema: CLAS GALLERY SMK MUTU</p>
-      </div>
-    </div>
-    <div clas="coltrol">
 
-      <input id="search" type="search" placeholder="Cari judul atau kategori" />
-    </div>
-  </header>
+    <h1>CLAS GALLERY SMK MUTU</h1>
 
-  <main>
-    <div class="gallery" id="gallery">
-   
-      <article class="card" data-cat="nature" data-title="SMK MUTU CIKAMPEK">
-        <img class="thumb" src="https://i.supaimg.com/0935af63-1985-48bc-87e6-51bd7b2012a4.jpg" alt="Sunset di Danau" loading="lazy">
-        <div class="meta">
-         
-      </article>
+    <div class="gallery">
 
-      <article class="card" data-cat="city" data-title="Gedung Modern">
-        <img class="thumb" src="https://i.supaimg.com/fdef1798-2dd0-4272-ab73-e62eb3e58cc6.jpg" alt="Gedung Modern" loading="lazy">
-        <div class="meta">
+        <div class="card">
+            <img src="https://i.supaimg.com/0935af63-1985-48bc-87e6-51bd7b2012a4.jpg" alt="SMK MUTU Cikampek">
+            <div class="title">SMK MUTU CIKAMPEK</div>
+        </div>
 
 
         </div>
-      </article>
 
-</script>
+  
+
 </body>
 </html>
